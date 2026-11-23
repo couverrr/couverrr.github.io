@@ -1,17 +1,51 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>vkilinn</title>
-  <link rel="stylesheet" href="styles/general.css" />
-  <link rel="stylesheet" href="styles/index.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Приложения и игры независимого Android-разработчика Happy Goat.">
+  <meta name="theme-color" content="#f7f8f5">
+  <title>Happy Goat — приложения для Android</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+  <main class="site">
+    <header class="profile">
+      <img class="profile__logo" src="assets/happy-goat.webp" alt="Логотип Happy Goat" width="88" height="88">
+      <div>
+        <h1>Happy Goat</h1>
+        <p class="profile__description">Независимый разработчик.<br>Приложения и игры для Android.</p>
+      </div>
+    </header>
 
-<body class="body">
-  <img src="center image.jpg" alt="GGs">
+    <nav class="stores" aria-label="Страницы разработчика в магазинах">
+      <a class="store-link" href="https://www.rustore.ru/catalog/developer/qk1e7p">RuStore</a>
+      <a class="store-link" href="https://play.google.com/store/apps/dev?id=5971500010617913584">Google Play</a>
+    </nav>
+
+    <section class="apps" aria-labelledby="apps-title">
+      <h2 id="apps-title">Приложения</h2>
+      <ul class="app-list">
+        <!-- Чтобы добавить приложение, скопируй один <li> и замени ссылку, иконку и тексты. -->
+        <li>
+          <a class="app-card" href="https://www.rustore.ru/catalog/app/com.vkilinn.apayprank">
+            <img class="app-card__icon" src="assets/aprank-pay.jpg" alt="" width="64" height="64">
+            <div class="app-card__body">
+              <h3>APrank Pay</h3>
+              <p>Звуковой пранк с имитацией перевода. Только для развлечения — без настоящих платежей.</p>
+              <span class="app-card__store">Открыть в RuStore</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Happy Goat</span>
+      <a href="mailto:vkilinn.work@gmail.com">vkilinn.work@gmail.com</a>
+    </footer>
+  </main>
 </body>
-
 </html>
